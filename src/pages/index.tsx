@@ -1,15 +1,15 @@
 import { Box } from "@chakra-ui/react";
 
-import CTASection from "components/CTASection";
-import SomeImage from "components/SomeImage";
-import SomeText from "components/SomeText";
+import AboutSection from "components/AboutSection";
+import Features from "components/Features";
+import Hero from "components/Hero";
 
 const Home = () => {
   return (
     <Box mb={8} w="full">
-      <SomeText />
-      <SomeImage />
-      <CTASection />
+      <Hero />
+      <AboutSection />
+      <Features />
     </Box>
   );
 };

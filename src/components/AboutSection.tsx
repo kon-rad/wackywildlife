@@ -1,14 +1,14 @@
-import { Flex, Link, Text, useColorMode } from "@chakra-ui/react";
+import { Flex, Box, Link, Text, useColorMode } from "@chakra-ui/react";
 import Image from "next/image";
 
 import HelperImage from "./HelperImage";
 import MotionBox from "./motion/Box";
 
-const SomeImage = () => {
+const AboutSection = () => {
   const { colorMode } = useColorMode();
 
   return (
-    <>
+    <Box mb={6} mt={6}>
       <MotionBox
         animate={{ y: 20, scale: 0.97 }}
         transition={{ repeat: Infinity, duration: 2, repeatType: "reverse" }}
@@ -17,7 +17,7 @@ const SomeImage = () => {
         marginX="auto"
       >
         <Image
-          src="/Launching-amico.svg"
+          src="/assets/images/ww_party_hat.jpg"
           width={400}
           height={400}
           alt="Launching Illustration"
@@ -25,17 +25,18 @@ const SomeImage = () => {
       </MotionBox>
       <Text textAlign="center" fontSize="xs">
         <Link href="https://stories.freepik.com/web" isExternal>
-          Illustration by Freepik Stories
+          See The Collection
         </Link>
       </Text>
 
       <Flex marginY={4} justifyContent="center" alignItems="center">
-        <HelperImage src={`/nextjs-icon-${colorMode}.svg`} label="NextJS" />
-        <HelperImage src="/chakra-ui-logomark-colored.svg" label="Chakra UI" />
-        <HelperImage src="/ts-logo-512.svg" label="TypeScript" />
+        <Text textAlign="center" fontSize="2xl">
+          We can't wait to unleash nature's middle fingers on the world with this brand new NFT collection😝🖕🌍
+          Thanks for joining us on this journey🚀🌕 
+        </Text>
       </Flex>
-    </>
+    </Box>
   );
 };
 
-export default SomeImage;
+export default AboutSection;

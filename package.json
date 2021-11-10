@@ -1,8 +1,8 @@
 {
-  "name": "nextarter-chakra",
+  "name": "wackywildlife",
   "version": "0.1.0",
   "private": true,
-  "author": "sozonome",
+  "author": "wackywildlifedevteam",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -17,6 +17,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@chakra-ui/icons": "^1.0.17",
     "@chakra-ui/react": "^1.6.12",
     "@emotion/cache": "^11.5.0",
     "@emotion/react": "^11.5.0",

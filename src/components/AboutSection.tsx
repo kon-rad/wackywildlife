@@ -1,12 +1,9 @@
-import { Flex, Box, Link, Text, useColorMode } from "@chakra-ui/react";
+import { Flex, Box, Link, Text } from "@chakra-ui/react";
 import Image from "next/image";
 
-import HelperImage from "./HelperImage";
 import MotionBox from "./motion/Box";
 
 const AboutSection = () => {
-  const { colorMode } = useColorMode();
-
   return (
     <Box mb={6} mt={6}>
       <MotionBox
@@ -31,8 +28,9 @@ const AboutSection = () => {
 
       <Flex marginY={4} justifyContent="center" alignItems="center">
         <Text textAlign="center" fontSize="2xl">
-          We can't wait to unleash nature's middle fingers on the world with this brand new NFT collection😝🖕🌍
-          Thanks for joining us on this journey🚀🌕 
+          We can&apos;t wait to unleash nature&apos;s middle fingers on the
+          world with this brand new NFT collection Thanks for joining us on this
+          journey
         </Text>
       </Flex>
     </Box>
